@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: sans-serif Gabriola;
+    background-color: #c8ecea;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 6rem;
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+h5 {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    padding-bottom: 3rem;
+}
+
+.card {
+    width: 600px;
+    background-color: #fff;
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-radius: 3px;
+}
+
+.img-card {
+    width: 150px;
+    height: 100px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+}
+
+.review {
+    padding-bottom: 2rem;
+}
+
+.review .star {
+    color: #ff5a23;
+    font-size: .8rem;
+}
+
+.prev, .next {
+    color: #ff5a23;
+    font-size: 1.8rem;
+    width: 45px;
+    height: 45px;
+    max-height: 45px;
+    max-width: 45px;
+    border-radius: 50%;
+    transition: all ease-in .4s;
+    line-height: 45px;
+    text-align: center;
+}
+
+.prev {
+    position: absolute;
+    top: 10%;
+    right: 14%;
+}
+
+.next {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #ff5a23;;
+}
+
+@media only screen and (max-width: 624px){
+    .card{
+        width: 90%;
+        padding-bottom: 20px;
+    }
+    .prev {
+        position: absolute;
+        top: 10%;
+        right: 18%;
+    }
+}
