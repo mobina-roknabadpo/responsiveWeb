@@ -10,14 +10,14 @@
             if (btn.classList.contains('prev')) {
                 index = index === 0 ? customers.length - 1 : index - 1
                 console.log(index, 'prev')
-                imgCustomer.src = `./images/${customers[index].img}.jpg`
+                imgCustomer.src = `../images/${customers[index].img}.jpg`
                 nameCustomer.textContent = customers[index].name
                 textCustomer.textContent = customers[index].text
             }
             if (btn.classList.contains('next')) {
                 index = index === customers.length - 1 ? 0 : index + 1
                 console.log(index, 'next')
-                imgCustomer.src = `./images/${customers[index].img}.jpg`
+                imgCustomer.src = `../images/${customers[index].img}.jpg`
                 nameCustomer.textContent = customers[index].name
                 textCustomer.textContent = customers[index].text
             }

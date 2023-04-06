@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Playfair+Display&family=Raleway:ital,wght@1,300&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Playfair Display', serif;
 }
 
 body {
@@ -29,20 +32,21 @@ h2 {
 
 h5 {
     color: rgb(255, 255, 255);
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding-bottom: 3rem;
 }
 
 .card {
     width: 600px;
     background-color: #fff;
-    padding: 1.4rem;
+    padding: 1.7rem;
     display: flex;
     flex-direction: column;
     text-align: left;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     position: relative;
     border-radius: 3px;
+    margin: auto;
 }
 
 .img-card {
@@ -76,6 +80,13 @@ h5 {
     text-align: center;
 }
 
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
 .prev {
     position: absolute;
     top: 10%;
@@ -93,14 +104,28 @@ h5 {
     background-color: #ff5a23;;
 }
 
-@media only screen and (max-width: 624px){
-    .card{
-        width: 90%;
+@media only screen and (max-width: 624px) {
+    .card {
+        width: 100%;
         padding-bottom: 20px;
     }
+
     .prev {
         position: absolute;
         top: 10%;
-        right: 18%;
+        right: 25%;
+    }
+
+    .img-card {
+        width: 100px;
+        height: 80px;
+    }
+
+    h5 {
+        font-size: .9rem;
+    }
+
+    h2 {
+        font-size: 2rem;
     }
 }
